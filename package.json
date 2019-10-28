@@ -1,0 +1,29 @@
+{
+  "name": "TIL",
+  "version": "1.0.0",
+  "description": "오늘 배운 것은 오늘 적는 사이트",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "commit": "vuepress build docs && git build -f && git commit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eomiso/TIL.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eomiso/TIL/issues"
+  },
+  "homepage": "https://github.com/eomiso/TIL#readme",
+  "devDependencies": {
+    "vuepress": "^1.2.0"
+  }
+}
