@@ -4,3 +4,9 @@
 // author : eomiso
 
 
+module.exports = {
+  title: "Eomiso's TIL(Today I Learned)",
+  description: 'Write what you have learned today',
+  base: "/TIL/"
+}
+
