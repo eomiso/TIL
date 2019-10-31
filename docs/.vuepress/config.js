@@ -16,6 +16,7 @@ module.exports = {
       href: '/logo.png'
     }]
   ],
+  plugins: ['@vuepress/back-to-top'],
   themeConfig: {
     sidebar: [
       {
@@ -34,7 +35,8 @@ module.exports = {
         text: 'Blog',
         link: 'https://eomiso.github.io'
       }
-    ]
+    ],
+    lastUpdated: 'Last Updated', //string | boolean
   }
 }
 
