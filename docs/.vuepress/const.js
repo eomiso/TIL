@@ -6,3 +6,7 @@ exports.PythonList = [
 exports.GitList = [
   'Git/git-basic.md'
 ]
+
+exports.MiscList = [
+  'Misc/dcamp-demoday.md'
+]
