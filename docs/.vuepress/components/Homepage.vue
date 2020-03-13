@@ -16,6 +16,10 @@
           </li>
         </ul>
       </div>
+      <div class="motoContainer">
+        <p>"곁다리가 많다는 것은 제대로 하고 있지 않다는 것이다."</p>
+        <p>"남이 하고 있는 것에 휩쓸리지 말고 언제나 기본으로 돌아가자"</p>
+      </div>
     </div>
   </div>
 </template>
@@ -25,8 +29,16 @@
 
 <style>
 @import "https://fonts.googleapis.com/css?family=Do+Hyeon";
+@import "https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap";
 .infoContainer {
   text-align: right;
+}
+
+.motoContainer {
+  text-align: center;
+  margin-top: 7rem;
+  font-family: "Yeon Sung", cursive;
+  font-size: 1.5rem;
 }
 
 h1 {
