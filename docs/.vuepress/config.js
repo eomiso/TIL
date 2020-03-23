@@ -26,8 +26,14 @@ module.exports = {
         title: '2. Git',
         children: CONST.GitList
       },{
-	title: 'Mics.',
-	children: CONST.MiscList
+        title: '3. Java',
+        children: CONST.JavaList
+      },{
+        title: '4. C++',
+        children: CONST.CppList
+      },{
+        title: 'Mics.',
+        children: CONST.MiscList
       }
     ],
     nav: [

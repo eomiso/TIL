@@ -7,6 +7,14 @@ exports.GitList = [
   'Git/git-basic.md'
 ]
 
+exports.JavaList = [
+
+]
+
+exports.CppList = [
+  
+]
+
 exports.MiscList = [
   'Misc/dcamp-demoday.md'
 ]
