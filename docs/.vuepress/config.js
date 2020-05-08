@@ -32,6 +32,9 @@ module.exports = {
         title: '4. C++',
         children: CONST.CppList
       },{
+	title: '5. Machine Learning',
+	children: CONST.MLList,
+      },{
         title: 'Mics.',
         children: CONST.MiscList
       }

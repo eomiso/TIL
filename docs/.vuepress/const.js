@@ -12,6 +12,11 @@ exports.JavaList = [
 ]
 
 exports.CppList = [
+  'CPP/reference_pointer.md'
+]
+
+exports.MLList = [
+  'ML/cssn224_1.md'
   
 ]
 
