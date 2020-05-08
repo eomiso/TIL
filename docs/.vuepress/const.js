@@ -1,6 +1,7 @@
 exports.PythonList = [
   'Python/numpy-testing.md',
-  'Python/lazy-evaluation.md'
+  'Python/lazy-evaluation.md',
+  'Python/variable-reference.md
 ]
 
 exports.GitList = [
