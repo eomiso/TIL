@@ -16,7 +16,16 @@ module.exports = {
       href: '/logo.png'
     }]
   ],
-  plugins: ['@vuepress/back-to-top'],
+  plugins: [
+      '@vuepress/back-to-top',
+      'vuepress-plugin-mathjax',
+	  {
+	    target: 'svg',
+	    macros: {
+	      '*': '\\times',
+	    }
+	  }
+  ],
   themeConfig: {
     sidebar: [
       {
@@ -45,7 +54,7 @@ module.exports = {
         link: 'https://github.com/eomiso'
       },{
         text: 'Blog',
-        link: 'https://eomiso.github.io'
+        link: 'https://eomiso.blogspot.com/'
       }
     ],
     lastUpdated: 'Last Updated', //string | boolean

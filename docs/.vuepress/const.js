@@ -1,7 +1,7 @@
 exports.PythonList = [
   'Python/numpy-testing.md',
   'Python/lazy-evaluation.md',
-  'Python/variable-reference.md
+  'Python/variable-ref-python.md'
 ]
 
 exports.GitList = [
@@ -17,8 +17,9 @@ exports.CppList = [
 ]
 
 exports.MLList = [
-  'ML/cssn224_1.md'
-  
+  'ML/cssn224_1.md',
+  'ML/cssn224_2.md',
+  'ML/cs224n_3.md'
 ]
 
 exports.MiscList = [

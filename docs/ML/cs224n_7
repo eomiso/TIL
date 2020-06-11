@@ -1,0 +1,52 @@
+# cs224n lecture 15
+
+## 개요
+* Natural Language Generation
+* large beam size
+* Persona
+* Sampling-based decoding
+* Gigaword, LCSTS, NYT, CNN/DailyMail, Wikihow
+* Simple Wikipedia, Newsela
+* Extractive vs. abstractive summarization
+* tf-idf
+* ROUGE
+* Pointer-Generator Networks
+* Reinforcement Learning
+* Mutual information
+* Retrieve-and-refine model
+* Skip-thought vectors
+* METEOR
+* Twitter, Ubuntu
+* humanness vs. conversational quality
+* Teacher forcing
+
+NLG 에 대한 전반적인 내용과 decoding 알고리즘, NLG task 와 그에 대한 neural approaches. NLG evaluation a tricky situation. NLG cutting edge research trends.
+
+## Natural Language Generation
+Any setting in which we generate new text (e.g. decoder)
+NLG 는 machine translation, summarization, dialogue, creative writing, freefrom question answering(answer is generated, not extracted - different from squad), Image captioning 의 subcomponent 들이다.   
+
+참고로 Language Momdeling은 다음 단어를 예측하는 모델이다.(given words so far) $$ P(y_t|y_1, \ldots, y_{t-1} ) $$
+해서 이러한 probability distribution 을 생성하는 시스템을 Language Momdel이라고 한다.
+
+**Conditional Language Modeling** : the task of predicting the next word, given the words so far, and _also some other input_ $x$ $P(y_t|y_1,\ldots,y_{t-1},x)$
+
+* large beam size
+* Persona
+* Sampling-based decoding
+* Gigaword, LCSTS, NYT, CNN/DailyMail, Wikihow
+* Simple Wikipedia, Newsela
+* Extractive vs. abstractive summarization
+* tf-idf
+* ROUGE
+* Pointer-Generator Networks
+* Reinforcement Learning
+* Mutual information
+* Retrieve-and-refine model
+* Skip-thought vectors
+* METEOR
+* Twitter, Ubuntu
+* humanness vs. conversational quality
+* Teacher forcing
+
+
