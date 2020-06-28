@@ -2,7 +2,8 @@ exports.PythonList = [
   'Python/numpy-testing.md',
   'Python/lazy-evaluation.md',
   'Python/variable-ref-python.md',
-  'Python/usage-of-underscore-in-python.md'
+  'Python/usage-of-underscore-in-python.md',
+  'Python/python_unpacking.md'
 ]
 
 exports.GitList = [
