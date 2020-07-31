@@ -5,7 +5,7 @@ Microcontrollers are `special purpose computers`.
 (consider your desktop as general purpose comuter) \
 And the Microcontrollers have *RAM, ROM, EEPROM* embedded in it.
 Based on Harvard architecture \
-::: detail Keywords\
+::: details Keywords\
 **embedded**(inside another device), **dedicated** (to one task),
  **small and lowcost**.
 
@@ -15,7 +15,7 @@ imcrocontroller is implemented into a processor.\
 
 __[ROM]__ \
 Permanently stores data on personal computers(PCs) and other electornic devices.
-::: detail Keywords \
+::: details Keywords \
 **Read Only Memory**. \
 Essential for basic input/output system **(BIOS)**
 Starting the computer.\
@@ -23,7 +23,7 @@ Starting the computer.\
 :::
 
 __[EEPROM]__ \
-::: detail Keywords \
+::: details Keywords \
 Electrically Erasable Programmable Read-Only Memory \
 Also called(or the updated version EEPROM) is **Flash Memory**. \
 :::
