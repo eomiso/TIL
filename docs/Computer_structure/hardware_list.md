@@ -42,6 +42,8 @@ But faster(1 GHz) than MCU(8 MHz ~ 5MHz).\
 MCU has **power saving system**, while Processor are not.\
 Microcontrollers are based on Harvard Architecture<sup>[1](#footnote1)</sup>\
 , while Processors are based on Von Neumann model<sup>[2](#footnote2)</sup> where program and data are stored in same memory module.
+\
+\
 
 ---
 <a name="footnote1">1.</a> program memory and data memory are separate.\
