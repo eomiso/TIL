@@ -1,11 +1,10 @@
 # Basic Hardwares to Remember
 
-__[Microcontroller(MCU)]__
+__[Microcontroller(MCU)]__ \
 Microcontrollers are `special purpose computers`. 
 (consider your desktop as general purpose comuter) \
 And the Microcontrollers have *RAM, ROM, EEPROM* embedded in it.
-Based on Harvard architecture
-
+Based on Harvard architecture \
 ::: detail Keywords
 **embedded**(inside another device), **dedicated** (to one task),
  **small and lowcost**.
@@ -14,37 +13,31 @@ Q. What is the difference between microcontroller and processor?
 imcrocontroller is implemented into a processor.
 :::
 
-__[ROM]__
+__[ROM]__ \
 Permanently stores data on personal computers(PCs) and other electornic devices.
 ::: detail Keywords
+**Read Only Memory**. \
+Essential for basic input/output system **(BIOS)**
 Starting the computer.\
 **RAM** is volatile on the other hand.
 :::
 
-::: detail Keywords
-**Read Only Memory**. \
-Essential for basic input/output system **(BIOS)**
-:::
-
-__[EEPROM]__
-
+__[EEPROM]__ \
 ::: detail Keywords
 Electrically Erasable Programmable Read-Only Memory
 Also called(or the updated version EEPROM) is **Flash Memory**.
 :::
 
-__[PIC]__
-
+__[PIC]__ \
 an example of popular microcontroller.
 
-__[Processor]__
+__[Processor]__ \
 or known as **microprocessor**. No peripheral devices such as RAM, ROM,EEPROM. \
 Therefore, it is bulkier than microcontrollers(*compact*).
 But faster(1 GHz) than MCU(8 MHz ~ 5MHz).
 MCU has **power saving system**, while Processor are not.
 Microcontrollers are based on Harvard Architecture<sup>[1](#footnote1)</sup>
 , while Processors are based on Von Neumann model<sup>[2](#footnote2)</sup> where program and data are stored in same memory module.
-
 
 ---
 <a name="footnote1">1.</a> program memory and data memory are separate.
