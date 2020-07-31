@@ -32,6 +32,6 @@ exports.MiscList = [
 
 exports.CStrucList = [
   'Computer_structure/hardware_list.md',
-  'Computer_structure/arduino_sparkfund.md',
+  'Computer_structure/arduino_sparkfun.md',
   'Computer_structure/check_if_connected_sparkfun.md'
 ]
