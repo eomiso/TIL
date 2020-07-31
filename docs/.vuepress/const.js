@@ -29,6 +29,6 @@ exports.MiscList = [
   'Misc/dcamp-demoday.md'
 ]
 
-exports.MiscList = [
+exports.CStrucList = [
   'Computer_structure/hardware_list.md'
 ]
