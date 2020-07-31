@@ -28,3 +28,7 @@ exports.MLList = [
 exports.MiscList = [
   'Misc/dcamp-demoday.md'
 ]
+
+exports.MiscList = [
+  'Computer_structure/hardware_list.md'
+]
