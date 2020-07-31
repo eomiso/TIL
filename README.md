@@ -7,6 +7,7 @@ This Repo will be a Vuepress generated static webpage for \<Today I learned><br>
 
 To generate and deploy the webpage after modification or addition just put the following command.<br>
 웹페이지를 생성하고 릴리즈 하기 위해서는 다음 코드를 실행하세요(deploy.sh) 파일은 레포지토리에 포함되어 있습니다.
+
 ```
 $ sh deploy.sh
 ```
@@ -15,3 +16,7 @@ $ sh deploy.sh
 
 [thoughtbot/til](https://github.com/thoughtbot/til)
 [VuePress Guide](https://vuepress.vuejs.org/guide/deploy.html#github-pages)
+
+## Vuepress에서의 Markdown
+Vuepress 에서는 new line이 두번 있어야 실제로 문단이 바뀝니다.
+문단 내에서 줄만 바꾸고 싶다면 &nbsp;를 사용합니다.(혹은 \도 가능합니다.)
