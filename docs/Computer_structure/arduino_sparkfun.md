@@ -19,6 +19,7 @@ Power Up > Run mode(whatever file has been uploaded) > `bootloader mode`(to uplo
 [Error when using SVL bootloader] \
 ![error message:Sparkfun Variable Loader](https://i.imgur.com/G4w086r.png)
 
+[Error when using Ambique Secure Bootloader] \
 ![error message:Ambique Secure Bootloader](https://i.imgur.com/zEP6GUo.png)
 
 **[시도해본 것들]** \
