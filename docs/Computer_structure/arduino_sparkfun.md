@@ -41,7 +41,8 @@ tensorflow 최신 및 낮은 버전 모두 사용 \
 ![putty 연결 사진](https://i.imgur.com/tvm6Fbq.png)
 
 
-> 추정하기로, bootloader가 corrupt 한 것 같다???. \ 
+> 추정하기로, bootloader가 corrupt 한 것 같다???. 
+> 
 > [Sparkfun Forum - Uploads Don't work anymore](https://forum.sparkfun.com/viewtopic.php?f=169&t=52896) \
 > [SparkFun Troubleshooting Tips](https://learn.sparkfun.com/tutorials/sparkfun-troubleshooting-tips?_ga=2.32352445.26444199.1548087168-1358775963.1528127798) \
 > [Installing an arduino bootloader](https://learn.sparkfun.com/tutorials/installing-an-arduino-bootloader) \
