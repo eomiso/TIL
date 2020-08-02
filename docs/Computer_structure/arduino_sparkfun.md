@@ -50,4 +50,5 @@ tensorflow 최신 및 낮은 버전 모두 사용 \
 
 ---
 
-<a name="footnote1">1.</a> 현재 [Stackoverflow](https://stackoverflow.com/questions/63213634/sparkfun-edge-bootloader-problem-not-working)에 질문 올린 상태. \ 안되면 [이곳-Sparkfun Forum](https://forum.sparkfun.com/viewforum.php?f=153)에 질문 올릴 예정
+<a name="footnote1">1.</a> 현재 [Stackoverflow](https://stackoverflow.com/questions/63213634/sparkfun-edge-bootloader-problem-not-working)에 질문 올린 상태. \ 
+안되면 [이곳-Sparkfun Forum](https://forum.sparkfun.com/viewforum.php?f=153)에 질문 올릴 예정
