@@ -26,16 +26,16 @@ Power Up > Run mode(whatever file has been uploaded) > `bootloader mode`(to uplo
 (1) Gentoo \
 driver 새로설치 (CH341SER) : CH340 Linux 버전은 `time pending(?)` 에러가 나서 ARCH Linux 버전 용 driver 설치 \
 boards manager 최신 및 낮은 버전 모두 사용. \
-tensorflow-lite 최신 및 낮은 버전 모두 사용. \
+tensorflow-lite 최신 및 낮은 버전 모두 사용. 
 
 (2) MAC \
 driver 새로 설치 (CH341SER 맥용 버전) \
 apollo3 boards manager 최신 버전 사용 \
-apollo3 boards manager 낮은 버전 사용 \
+apollo3 boards manager 낮은 버전 사용 
 
 (3) Windows \
 boards manager 최신 및 낮은 버전 모두 사용 \
-tensorflow 최신 및 낮은 버전 모두 사용 \
+tensorflow 최신 및 낮은 버전 모두 사용 
 
 (4) local echo test : 되는 것 확인 \
 ![putty 연결 사진](https://i.imgur.com/tvm6Fbq.png)
