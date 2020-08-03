@@ -12,7 +12,6 @@ exports.GitList = [
 ]
 
 exports.JavaList = [
-
 ]
 
 exports.CppList = [
@@ -22,7 +21,13 @@ exports.CppList = [
 exports.MLList = [
   'ML/cssn224_1.md',
   'ML/cssn224_2.md',
-  'ML/cs224n_3.md'
+  'ML/cs224n_3.md',
+  'ML/cs224n_4.md',
+  'ML/cs224n_5.md',
+  'ML/cs224n_6.md',
+  'ML/cs224n_7.md',
+  'ML/ml_dict.md',
+  'ML/style_transfer.md'
 ]
 
 exports.MiscList = [
