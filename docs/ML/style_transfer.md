@@ -34,5 +34,5 @@ $z$ (content variable) 가 복잡해야 한다.
 - Towards real language understanding.
 - Personalized chatbots
 
-
 [From GAN to WGAN](https://lilianweng.github.io/lil-log/2017/08/20/from-GAN-to-WGAN.html) 읽어보기
+
