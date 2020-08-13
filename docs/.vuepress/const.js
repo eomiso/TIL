@@ -16,7 +16,8 @@ exports.JavaList = [
 
 exports.CppList = [
   'CPP/reference_pointer.md',
-  'CPP/about_extern.md'
+  'CPP/about_extern.md',
+  'CPP/pointer_examples.md'
 ]
 
 exports.MLList = [
