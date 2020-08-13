@@ -18,6 +18,8 @@ I have seen that in some books, leading double underscore is introduced as a way
 A technique used to solve various problems caused by conflicting names for various programming entities.
 
 It provides a way of encoding more information in the name of a function, structure, or another datatype. This makes it possible to pass more semantic informations from the compilers to the linkers.
+
+**related topics** : comiler
 :::
 
 ```bash
