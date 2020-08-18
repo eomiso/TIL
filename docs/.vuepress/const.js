@@ -34,11 +34,14 @@ exports.MLList = [
 
 exports.MiscList = [
   'Misc/dcamp-demoday.md',
-  'Misc/how_to_untar.md'
+  'Misc/how_to_untar.md',
+  'Misc/jupyter_notebook_conda.md',
+  `Misc/useful_commands.md`
 ]
 
 exports.CStrucList = [
   'Computer_structure/hardware_list.md',
   'Computer_structure/arduino_sparkfun.md',
-  'Computer_structure/check_if_connected_sparkfun.md'
+  'Computer_structure/check_if_connected_sparkfun.md',
+  'Computer_structure/implement_Lenet.md'
 ]
