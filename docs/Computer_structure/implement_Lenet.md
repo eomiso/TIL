@@ -18,10 +18,23 @@ xxd -i converted_model.tflite > model_data.cc # or model_data.h
 
 file structure가 굉장히 복잡하다.
 
-`tensorflow/lite/chema/shema_generated.h` : `tflite::GetModel(bin`
-`tensorflow/lite/micro/micro_interpreter.h` : `tflite::MicroInterpreter`
+`tensorflow/lite/chema/shema_generated.h` : `tflite::GetModel(bin` \
+`tensorflow/lite/micro/micro_interpreter.h` : `tflite::MicroInterpreter` \
+... 등등을 조금씩 따라가 보았다.
+
+[Tensorflow lite - Developer workflow](https://www.tensorflow.org/lite/microcontrollers) 를 보면 위의 파일들이 tensorflow에서 제공하는 Microcontroller 용 [C++ library](https://www.tensorflow.org/lite/microcontrollers/library)라는 것을 확인할 수 있다.
+
+::: details 파일구조
+`tensorflow/tensorflow/lite/micro` 이하
+
+`all_ops_resolver.h` : operations used by the interpreter to run the model
+`micro_mutable_op_resolver.h` : pulls in only the operations your model needs.
+`micro_error_reporter.h` : ouputs debug information
+`micro_interpreter.h` : handle and run models
 
 
+
+:::
 
 
 ## LeNet5 구현하기
