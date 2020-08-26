@@ -64,3 +64,13 @@ grep -wRT "text"
 
 
 
+## Misc
+
+#### emerge specific version
+```bash
+emerge y <package>
+```
+#### search for available package versions in the tree
+```bash
+eqery y <package>
+```
