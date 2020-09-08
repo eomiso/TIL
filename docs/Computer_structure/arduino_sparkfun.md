@@ -2,21 +2,56 @@
 
 ## Reference
 
-[AI - tutorials for sparkfun](https://learn.sparkfun.com/tutorials/programming-the-sparkfun-edge-with-arduino/all) : 그런데 여기서 제공된 깃헙 코드는 deprecated 되어서 aruino tensorflow-lite library 폴더에 들어있는 examples file 들로 진행하였다.
+[AI - tutorials for sparkfun](https://learn.sparkfun.com/tutorials/programming-the-sparkfun-edge-with-arduino/all) : 그런데 여기서 제공된 깃헙 코드는 deprecated 되어서 Tensorflow 깃헙에 있는 examples file 들로 진행했다.
 
 
-## The Upload Sequence
+## Upload Sequence
 
-::: details Default
+::: details 아두이노 ide 로는 안됨
 Power Up > Run mode(whatever file has been uploaded) > `bootloader mode`(to upload sothing new).
   * To get into a bootloader mode. Read [this - Upload a Sequence](https://learn.sparkfun.com/tutorials/programming-the-sparkfun-edge-with-arduino/all)
 
 :::
+[Person detection Example]
+The **person detection example** provided in tensorflow github can be compiled if you follow the instructions given in its README.md file. \
 
+[Other personal codes] \
+However if you'd like to compile and bootload your own code, you need to make use of [ambiq_apollo3 SDK](https://learn.sparkfun.com/tutorials/using-sparkfun-edge-board-with-ambiq-apollo3-sdk/all).\
+You can download it from the linked above, but you need to follow the instructions carefully since you need to install `arm-none-eabi-gcc`, and construct the directory structure carefully. \
+
+You'll find an `examples` folder inside the newly installed sdk folder. There is a folder with templates. With that you can formulate your own code, then compile and upload to your Edge device with the help of `Makefile` in the `gcc` folder. \
+When I was trying to test this with my own code I had problems compiling. I had to fix 2 ~ 3 lines in the `Makefile`.
+
+If your main.c file compilable, then you should be able to upload your binary files with `make bootloader` under the `gcc` folder
+
+## Installing Driver
+You need to install CH34x driver. I'm using Gentoo, and I downloaded the driver from here and it worked [fine](https://github.com/juliagoda/CH341SER).\
+The code to type in is as following:
+```
+make clean
+make
+sudo make load
+sudo rmmod ch341
+lsmod | grep ch34
+```
+
+## Handling the device to upload your binary files.
+* You need to plug out the usb, and make sure that `ch34x, ch341` are both loaded while your Edge is not connected. Then remove ch341.
+* rst(hold) -> 14(hold) -> rst(remove your finger) -> 14(remove your finger)
+* if this doesn't work then 14(hold) -> rst( hold for 5~8 sec ) -> while holding 14 with rst try compiling and uploading with that.
+* 꼭 usb를 뺀 상태에서 `ch34x, ch341` 드라이버를 모두 올린 후에, ch341을 빼줘야 한다. 또는 usb를 꼽았다가 뺀 후에(그러면 usb를 꼽기 전에 ch341 드라이버를 내렷더라도, 다시 올라가 있는 것을 확인할 수 있다). 
+* 정리하면 (1) `ch34x, ch341`가 모두 올라가 있고, (2) usb가 꼽혀있지 않은 상태에서, (2) `ch341`을 내려주고 (3) 그 후에 usb를 꼽아야 된다, (4) 그리고 업로드에 앞서 rst -> 14 -> rst버튼 손 떼기 -> 14 번 손을 떼서 기기를 리셋(?) 해준다.
+* 이게 안되면 14 (계속 누른다) -> rst 약 5~8초정도 꾹 누른다 -> 14는 계속 누른 상태로 업로드를 한다.
+* 이렇게 해야만 upload가 된다... 하지만 단순 시리얼 연결은 이렇게까지 하지 않아도 e된다(echo)
+* 하지만 이렇게 하더라도 여전히 아두이노를 이용한 업로드는 되지 않는다... 
+
+
+---
+Bellow should be removed
 ---
 
 ## 문제점 1: bootloader 단계로 진입이 안됨 <sup>[1](#footnote1)</sub>
-[Error when using SVL bootloader] \
+[Error when using SVL bootloader]\
 ![error message:Sparkfun Variable Loader](https://i.imgur.com/G4w086r.png)
 
 [Error when using Ambique Secure Bootloader] \
@@ -57,17 +92,6 @@ tensorflow 최신 및 낮은 버전 모두 사용
 안되면 [이곳-Sparkfun Forum](https://forum.sparkfun.com/viewforum.php?f=153)에 질문 올릴 예정
 
 ---
-
-## 문제해결(Person-detection에 대하여)
-* ch341SER 드라이버를 설치하면(load) `ch34x, ch431` 가 모두 설치되어 있는 것을 확인할 수 있는데(`lsmod | grep ch34`로 확인)\ 보드를 연결하지 않은 상태에서 `ch341`을 내려줘야 한다(`sudo rmmod ch341`)\ 
-* 꼭 usb를 뺀 상태에서 `ch34x, ch341` 드라이버를 모두 올린 후에, ch341을 빼줘야 한다. 또는 usb를 꼽았다가 뺀 후에(그러면 usb를 꼽기 전에 ch341 드라이버를 내렷더라도, 다시 올라가 있는 것을 확인할 수 있다). 
-* 정리하면 (1) `ch34x, ch341`가 모두 올라가 있고, (2) usb가 꼽혀있지 않은 상태에서, (2) `ch341`을 내려주고 (3) 그 후에 usb를 꼽아야 된다, (4) 그리고 업로드에 앞서 rst -> 14 -> rst버튼 손 떼기 -> 14 번 손을 떼서 기기를 리셋(?) 해준다.
-* 이게 안되면 14 (계속 누른다) -> rst 약 5~8초정도 꾹 누른다 -> 14는 계속 누른 상태로 업로드를 한다.
-* 이렇게 해야만 upload가 된다... 하지만 단순 시리얼 연결은 이렇게까지 하지 않아도 
-* 하지만 이렇게 하더라도 여전히 아두이노를 이용한 업로드는 되지 않는다... 
-* 직접 Ambiq SDK 를 사용해서 compile을 해줘야한다. [여기](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/micro/examples/person_detection#running-on-sparkfun-edge)
-
-
 
 ## Arduino IDE upload 문제 해결 방안: 직접 컴파일을 하자.
 
