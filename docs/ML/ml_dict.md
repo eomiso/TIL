@@ -7,3 +7,4 @@
 * Professor Forcing : 
 * Self-feeding : 
 * Kullback-Leiber divergence :              
+* Electra : 
