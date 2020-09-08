@@ -2,7 +2,7 @@
 
 ## Reference
 
-[AI - tutorials for sparkfun](https://learn.sparkfun.com/tutorials/programming-the-sparkfun-edge-with-arduino/all) : 그런데 여기서 제공된 깃헙 코드는 deprecated 되어서 Tensorflow 깃헙에 있는 examples file 들로 진행했다.
+[AI - tutorials for sparkfun](https://learn.sparkfun.com/tutorials/programming-the-sparkfun-edge-with-arduino/all) : But the examples in the github provided by the webpage is deprecated, had to use Tensorflow examples from the [tensorflow github](https://github.com/tensorflow/tensorflow) under lite/micro/examples.
 
 
 ## Upload Sequence
