@@ -20,9 +20,9 @@ However if you'd like to compile and bootload your own code, you need to make us
 You can download it from the linked above, but you need to follow the instructions carefully since you need to install `arm-none-eabi-gcc`, and construct the directory structure carefully. \
 
 You'll find an `examples` folder inside the newly installed sdk folder. There is a folder with templates. With that you can formulate your own code, then compile and upload to your Edge device with the help of `Makefile` in the `gcc` folder. \
-When I was trying to test this with my own code I had problems compiling. I had to fix 2 ~ 3 lines in the `Makefile`.
+When I was trying to test this with my own code I had some problems compiling. I had to fix a few lines in the `Makefile` to make it work.
 
-If your main.c file compilable, then you should be able to upload your binary files with `make bootloader` under the `gcc` folder
+If your main.c file is compilable, then you should be able to upload your binary files with `make bootloader` under the `gcc` folder
 
 ## Installing Driver
 You need to install CH34x driver. I'm using Gentoo, and I downloaded the driver from here and it worked [fine](https://github.com/juliagoda/CH341SER).\
