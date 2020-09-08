@@ -17,7 +17,7 @@ The **person detection example** provided in tensorflow github can be compiled i
 
 [Other personal codes] \
 However if you'd like to compile and bootload your own code, you need to make use of [ambiq_apollo3 SDK](https://learn.sparkfun.com/tutorials/using-sparkfun-edge-board-with-ambiq-apollo3-sdk/all).\
-You can download it from the linked above, but you need to follow the instructions carefully since you need to install `arm-none-eabi-gcc`, and construct the directory structure carefully. \
+You can download it from the linked above, but you need to follow the instructions carefully since you need to install `arm-none-eabi-gcc`, and construct the _directory path_ carefully. \
 
 You'll find an `examples` folder inside the newly installed sdk folder. There is a folder with templates. With that you can formulate your own code, then compile and upload to your Edge device with the help of `Makefile` in the `gcc` folder. \
 When I was trying to test this with my own code I had some problems compiling. I had to fix a few lines in the `Makefile` to make it work.
