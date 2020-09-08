@@ -5,7 +5,8 @@ exports.PythonList = [
   'Python/usage-of-underscore-in-python.md',
   'Python/python_unpacking.md',
   'Python/python_os_check.md',
-  'kewords_check.md'
+  'Python/kewords_check.md',
+  'Python/python_data_handle.md',
 ]
 
 exports.GitList = [
