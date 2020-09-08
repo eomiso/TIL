@@ -36,3 +36,12 @@ $z$ (content variable) 가 복잡해야 한다.
 
 [From GAN to WGAN](https://lilianweng.github.io/lil-log/2017/08/20/from-GAN-to-WGAN.html) 읽어보기
 
+띄어쓰기 해주는 한국어 형태소
+
+최종 아웃풋이 아닌 중간에 히든 스테이트를 넣겠다는 것.
+
+sentencepiece : 워드 엠베딩(pretraining이 있을 것이다).
+okt (댓글 - detokenizer) 가 있으니... (깃랩에 있다)
+
+gensim으로 한국어 엠베딩 ()
+
