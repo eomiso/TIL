@@ -18,10 +18,38 @@ xxd -i converted_model.tflite > model_data.cc # or model_data.h
 
 file structure가 굉장히 복잡하다.
 
-`tensorflow/lite/chema/shema_generated.h` : `tflite::GetModel(bin`
-`tensorflow/lite/micro/micro_interpreter.h` : `tflite::MicroInterpreter`
+`tensorflow/lite/chema/shema_generated.h` : `tflite::GetModel(bin` \
+`tensorflow/lite/micro/micro_interpreter.h` : `tflite::MicroInterpreter` \
+... 등등을 조금씩 따라가 보았다.
 
+[Tensorflow lite - Developer workflow](https://www.tensorflow.org/lite/microcontrollers) 를 보면 위의 파일들이 tensorflow에서 제공하는 Microcontroller 용 [C++ library](https://www.tensorflow.org/lite/microcontrollers/library)라는 것을 확인할 수 있다.
 
+::: details 파일구조
+`tensorflow/tensorflow/lite/micro` 이하
+
+`all_ops_resolver.h` : operations used by the interpreter to run the model
+`micro_mutable_op_resolver.h` : pulls in only the operations your model needs.
+`micro_error_reporter.h` : ouputs debug information
+`micro_interpreter.h` : handle and run models
+:::
+
+## tflite visualization 사용을 위해서 bazel 파일 수정
+[visulize.py 실현](https://github.com/grpc/grpc/pull/20048/commits/de6255941a5e1c2fb2d50e57f84e38c09f45023d)
+29.1 version으로 빌드 성공
+
+## tensorflow lite micro c++ library 를 이용해서 컴파일 하기
+일단 tensorflow lite c++ library의 objective file을 만들어야.
+
+```
+//tensorflow 보다 상위 디렉터리에서
+make -f tensorflow/lite/micro/tools/make/Makefile
+```
+을 돌리고 나면 `tensorflow/lite/micro/tools/make/gen/` 에 목적 파일을 모아놓은 디렉터리가 하나 새로 생성된다. 거기서 `lib/libtensorflow-microlite.a`를 링크해서 executable을 만들면 된다.
+
+```
+// 예를 들어 이런식..
+g++ main_functions.o tensorflow/lite/micro/tools/make/gen/linux_x86_64/libtensorflow-microlite.a
+```
 
 
 ## LeNet5 구현하기

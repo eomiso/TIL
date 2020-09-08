@@ -4,6 +4,7 @@
 2. Docker
 3. Git
 4. gcc/g++
+5. grep
 
 
 
@@ -39,6 +40,21 @@ grep -rnw '/path/to/somewhere/' -e 'pattern'
 * `-l` just give the file name of matching files
 * also `
 
+### 특정한 `text`를 찾아서 출력하기
+
+```bash
+grep -wRT "text"
+```
+* `-T`: make tabs line up (if needed) 
+
+### vim: ctags 를 이용해서 클래스 및 함수의 definition 찾기
+* ctags 설치
+* 분석하고 싶은 directory에서 `ctags -R`
+* vim ~/.vimrc `set tags = /directory of tags/tags`
+* 찾을 때, `vi -t "~"`
+* `Ctrl-]`, `g-]`,뒤로가기: `ctrl-t`
+
+
 [Reference](https://stackoverflow.com/a/16957078)
 
 ## Docker
@@ -71,7 +87,18 @@ docker run -dit -p 5000:80 -v ~/<host_directory>:<directory_in_container> --name
 ## gcc/g++
 ### Include `include/` when compiling
 
-`g++ -iquote dir <*.cc>`
+`g++ -iquote include_dir <*.cc>`
+
+## Misc
+
+#### emerge specific version
+```bash
+emerge y <package>
+```
+#### search for available package versions in the tree
+```bash
+eqery y <package>
+```
 
 ## Git
 
