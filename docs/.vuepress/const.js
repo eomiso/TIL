@@ -45,5 +45,6 @@ exports.CStrucList = [
   'Computer_structure/hardware_list.md',
   'Computer_structure/arduino_sparkfun.md',
   'Computer_structure/check_if_connected_sparkfun.md',
-  'Computer_structure/implement_Lenet.md'
+  'Computer_structure/implement_Lenet.md',
+  'Computer_structure/naive_conv.md'
 ]

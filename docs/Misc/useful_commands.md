@@ -89,6 +89,15 @@ docker run -dit -p 5000:80 -v ~/<host_directory>:<directory_in_container> --name
 
 `g++ -iquote include_dir <*.cc>`
 
+`g++ -I include_dir`
+
+### gcc -Wall
+`gcc -Wall` enables all compiler's warning messages. This option should always be used, in order to generate better code.
+
+### Makefile error
+`(.text+0x20): undefined reference to 'main'`
+
+
 ## Misc
 
 #### emerge specific version
