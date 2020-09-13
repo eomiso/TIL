@@ -19,6 +19,8 @@ with open("<file_name>", "r") as f:
 >   - regex를 이용해서 파일 내용 substitude하기 -> shell로 하는 방법은?
 > 
 
+### Directory handling
+`os`, `sys` 모듈
 ## 2. Pandas
 ### Pandas: I/O
 _[Easy ways]_
@@ -42,7 +44,6 @@ df[1] = x
 ```py
 concated = pd.concat([df1, df2]. ignore_index=True) # false 해도 됨. 그러면 그냥 각각의 index가 살아 있을 뿐이다.
 ```
-
 
 <a name="footnote1">1.</a>
 <a name="footnote2">2.</a> 항상 이렇게 일종의 과제를 스스로 부여해 놓자. 하나하나 해결하다 보면 실력이 늘겠지
