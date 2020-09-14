@@ -31,7 +31,8 @@ exports.MLList = [
   'ML/cs224n_6.md',
   'ML/cs224n_7.md',
   'ML/ml_dict.md',
-  'ML/style_transfer.md'
+  'ML/style_transfer.md',
+  'ML/using_bert.md'
 ]
 
 exports.MiscList = [
